@@ -6,10 +6,16 @@
         <link rel="stylesheet" href='assets/css/styles.css'>
     </head>
     <body  onload="init()" >
-        
-        <button id='sidebar-button' onclick='handleSidebarButtonClick()'>open sidebar</button>    
+        <nav>
+    
+        <a href="/" class="current">About</a>
+    
+        <a href="/blog.html" >Blog</a>
+    
+</nav>
+        <button id='sidebar-button' onclick='handleSidebarButtonClick()'><img src="assets/images/menu_button.png" id='menu-button-img'></button>    
 <div id='sidebar'>
-    <button id='sidebar-button-close' onclick='sidebarButtonCloseClick()'>close sidebar</button>
+    <button id='sidebar-button-close' onclick='sidebarButtonCloseClick()'><img src="assets/images/x.png" id='menu-button-close-img'></button>
     <a href='#section-home'>Home</a><br>
     <a href='#section-about-me'>About</a><br>
     <a href='#section-projects'>Projects</a><br>
@@ -19,9 +25,11 @@
 
 <div class='top-header' id='section-home'>
     <h1>howard zhang</h1>
+    <p>3rd year cs student @ CarletonU</p>
     <a href="https://github.com/dos320"><img src="assets/images/github.png" class='social-images'></a>
     <a href="mailto:howard.zhang111@gmail.com"><img src="assets/images/email.png" class='social-images'></a>
-    <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/"><img src="assets/images/linkedin.png" class='social-images'></a>
+    <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/"><img src="assets/images/linkedin.png" class='social-images'></a><br>
+    <a href="#section-about-me"><img src="assets/images/downward_arrow.png" id="moving-arrow"></a>
 </div>
 
 <div class='content-div'>

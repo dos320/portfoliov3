@@ -6,7 +6,7 @@
         <link rel="stylesheet" href='assets/css/styles.css'>
     </head>
     <body {% if page.hasInit == true %} onload="init()" {% endif %}>
-        
+        {% include navigation.html %}
         {{ content }}
     </body>
 </html>
