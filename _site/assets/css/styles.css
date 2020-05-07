@@ -1,0 +1,19 @@
+html, body { margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+.current { color: green; }
+
+.social-images { width: 25px; height: 25px; }
+
+.top-header { width: 50%; margin: 0 auto; text-align: center; height: 100vh; }
+
+#sidebar-button { position: fixed; z-index: 9; top: 0; opacity: 0; transition-property: opacity; transition-duration: 0.15s; }
+
+#sidebar { border: 1px solid black; width: 25%; height: 100vh; position: fixed; z-index: 10; top: 0; background-color: whitesmoke; overflow: hidden; left: -2000px; transition-property: left; transition-duration: 0.25s; transition-timing-function: ease-out; }
+
+#sidebar-button-close { float: right; }
+
+.text-blocks { width: 50%; margin: 0 auto; text-align: center; }
+
+/*# sourceMappingURL=styles.css.map */
