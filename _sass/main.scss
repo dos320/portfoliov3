@@ -101,3 +101,24 @@ button{
     margin: 0 auto;
     text-align: center;
 }
+
+#section-about-me, #section-projects, #section-resume{
+    height: 50vh;
+}
+
+#about-me-header{
+    text-align: left; 
+}
+
+#skills-header{
+    text-align: left;
+    
+}
+
+#about-me-paragraph, #section-skills, #more-projects-header{
+    text-align: left;
+    word-wrap: break-word;
+    width: 50%;
+    margin-left: 50vh;
+}
+

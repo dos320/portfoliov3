@@ -10,6 +10,8 @@
     
         <a href="/" class="current">About</a>
     
+        <a href="/projects.html" >Projects</a>
+    
         <a href="/blog.html" >Blog</a>
     
 </nav>
@@ -18,8 +20,12 @@
     <button id='sidebar-button-close' onclick='sidebarButtonCloseClick()'><img src="assets/images/x.png" id='menu-button-close-img'></button>
     <a href='#section-home'>Home</a><br>
     <a href='#section-about-me'>About</a><br>
+    <a href='#section-skills'>Skills</a><br>
     <a href='#section-projects'>Projects</a><br>
-    <a href='#section-resume'>Resume</a><br>
+    <a href='#section-resume'>Resume</a><br><br><br>
+
+    <a href='projects.html'>Projects</a><br>
+    <a href='blog.html'>Blog</a><br>
 </div>
 
 
@@ -33,14 +39,37 @@
 </div>
 
 <div class='content-div'>
-    <div id='section-about-me' class='text-blocks'>
-        <h3>about me</h3>
+    <div id='section-about-me'>
+        <h3 id='about-me-header'>about me</h3>
+        <p id='about-me-paragraph'>
+            I am currently a third year Computer Science student at Carleton University. <br>
+            I have experience working on full-stack applications and web apps, designing mobile games, and managing/designing databases. <br>
+            In my spare time, I enjoy making music, making digital art, and designing/building new things. <br>
+        </p>
+        <h3 id='skills-header'>skills</h3>
+        <div id='section-skills'>
+            <p id='skills-paragraph'>
+                <strong>Detail Driven</strong><br>
+                <strong>Problem Solving</strong><br>
+                <strong>Communicating</strong><br>
+                <strong>Organizing</strong><br>
+            </p>
+        </div>
     </div>
-    <div id='section-projects' class='text-blocks'>
-        <h3>projects</h3>
+
+    <h3 id='projects-header'>recent projects</h3>
+    <div id='section-projects'>
+        <a href='projects.html'>more projects</a><br>
+        <div>
+            <a href='https://github.com/dos320/chatapp'>chatapp</a><br>
+            <a href='https://github.com/dos320/comp3005project'>comp3005project</a><br>
+            <a href='https://github.com/EmadRyanA/EAS-3004B'>SoundWaveSurfer</a><br>
+            <a href='https://github.com/dos320/jspaint'>jspaint</a><br>
+        </div>
     </div>
-    <div id='section-resume' class='text-blocks'>
-        <h3>resume</h3>
+    <h3 id='resume-header'>resume</h3>
+    <div id='section-resume'>
+        
     </div>
 </div>
 
