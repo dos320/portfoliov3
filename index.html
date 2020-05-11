@@ -19,15 +19,18 @@ hasInit: true
 
 
 <div class='top-header' id='section-home'>
-    <h1>{{ "Howard Zhang" | downcase }}</h1>
-    <p>3rd year cs student @ CarletonU</p>
-    <a href="https://github.com/dos320"><img src="assets/images/github.png" class='social-images'></a>
-    <a href="mailto:howard.zhang111@gmail.com"><img src="assets/images/email.png" class='social-images'></a>
-    <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/"><img src="assets/images/linkedin.png" class='social-images'></a><br>
-    <a href="#section-about-me"><img src="assets/images/downward_arrow.png" id="moving-arrow"></a>
+    <div id='top-header-inner'>
+        <h1>{{ "Howard Zhang" | downcase }}</h1>
+        <p>3rd year cs student @ CarletonU</p>
+        <a href="https://github.com/dos320"><img src="assets/images/github.png" class='social-images'></a>
+        <a href="mailto:howard.zhang111@gmail.com"><img src="assets/images/email.png" class='social-images'></a>
+        <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/"><img src="assets/images/linkedin.png" class='social-images'></a><br> 
+        <a href="#section-about-me"><img src="assets/images/downward_arrow.png" id="moving-arrow"></a>
+    </div>
+    
 </div>
 
-<div class='content-div'>
+<div id='content-div'>
     <div id='section-about-me'>
         <h3 id='about-me-header'>about me</h3>
         <p id='about-me-paragraph'>
@@ -88,10 +91,9 @@ hasInit: true
         <a href="mailto:howard.zhang111@gmail.com">Email (howard.zhang111@gmail.com)</a><br>
     </div>
 
-    
+    <p>v0.1 - 2020-05-11</p>
 </div>
 
-<p>v0.1 - 2020-05-11</p>
 <script>
     let handleSidebarButtonClick = ()=>{
         document.getElementById('sidebar-button').style.opacity = '0';

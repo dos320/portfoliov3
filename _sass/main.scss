@@ -3,6 +3,28 @@ html, body{
     padding: 0;
 }
 
+body{
+    background-image: url("../images/splash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+nav a{
+    color: white;
+    transition-property: color;
+    transition-duration: 0.25s;
+}
+nav a:visited{
+    color: white;
+}
+nav a:hover{
+    color: rgb(179, 135, 250);
+}
+nav a:active{
+    color: rgb(100, 74, 140);
+}
+
 nav{
     text-align:right;
     padding-top: 10px;
@@ -21,8 +43,10 @@ button{
     overflow: hidden;
 }
 
-.current{
-    color: green;
+#top-header-inner{
+    position:absolute;
+    left: 0px;
+    right:0px;
 }
 
 .social-images{
@@ -139,3 +163,6 @@ button{
     grid-gap: 20px;
 }
 
+#content-div{
+    background-color: rgba(255, 255, 255, 0.7);
+}
