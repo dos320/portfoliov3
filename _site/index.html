@@ -22,10 +22,11 @@
     <a href='#section-about-me'>About</a><br>
     <a href='#section-skills'>Skills</a><br>
     <a href='#section-projects'>Projects</a><br>
-    <a href='#section-resume'>Resume</a><br><br><br>
+    <a href='#section-contact'>Contact Me</a><br><br><br>
 
     <a href='projects.html'>Projects</a><br>
     <a href='blog.html'>Blog</a><br>
+
 </div>
 
 
@@ -42,44 +43,67 @@
     <div id='section-about-me'>
         <h3 id='about-me-header'>about me</h3>
         <p id='about-me-paragraph'>
-            I am currently a third year Computer Science student at Carleton University. <br>
+            I am currently a third year Computer Science student at Carleton University (Graduating in April 2021). <br>
             I have experience working on full-stack applications and web apps, designing mobile games, and managing/designing databases. <br>
             In my spare time, I enjoy making music, making digital art, and designing/building new things. <br>
         </p>
         <h3 id='skills-header'>skills</h3>
         <div id='section-skills'>
-            <p id='skills-paragraph'>
-                <strong>Detail Driven</strong><br>
+            <div id='skills-1'>
+                <strong>Detail Oriented</strong><br>
+                I am good at paying attention to details, and using this information to better the projects I work on or the teams I work with. 
+                <br>
+            </div>
+            
+            <div id='skills-2'>
                 <strong>Problem Solving</strong><br>
-                <strong>Communicating</strong><br>
+                I can come up with effective solutions and a clear process for solving problems.
+            </div>
+            <div id='skills-3'>
+                <strong>Communicating/Collaborating</strong><br>
+                I can explain things concisely and dynamically - based on the skills of the person I am talking to.
+            </div>
+            <div id='skills-4'>
                 <strong>Organizing</strong><br>
-            </p>
+                I develop methods to keep track of and triage tasks at hand, while maintaining flexibility for unexpected events.
+            </div>   
         </div>
     </div>
 
     <h3 id='projects-header'>recent projects</h3>
     <div id='section-projects'>
         <a href='projects.html'>more projects</a><br>
-        <div>
-            <a href='https://github.com/dos320/chatapp'>chatapp</a><br>
-            <a href='https://github.com/dos320/comp3005project'>comp3005project</a><br>
-            <a href='https://github.com/EmadRyanA/EAS-3004B'>SoundWaveSurfer</a><br>
-            <a href='https://github.com/dos320/jspaint'>jspaint</a><br>
+        <div id='block-container'>
+            <div id='project-1'>
+                <a href='https://github.com/dos320/chatapp'>chatapp</a>
+                <p>a simple chatapp made using node.js/socket.io</p>
+            </div>
+            <div id='project-2'>
+                <a href='https://github.com/dos320/comp3005project'>comp3005project</a>
+                <p>a mock bookstore management system with a postgresql backend and a html/js frontend</p>
+            </div>
+            <div id='project-3'>
+                <a href='https://github.com/EmadRyanA/EAS-3004B'>SoundWaveSurfer</a>
+                <p>a mobile rhythm game (<a href="https://play.google.com/store/apps/details?id=com.EAS.SoundWaveSurfer">on google play!</a>) made with unity/c#</p>
+            </div>
+            <div id='project-4'>
+                <a href='https://github.com/dos320/jspaint'>jspaint</a>
+                <p>a "draw and guess" multiplayer game made with node.js/socket.io</p>
+            </div>
+            
         </div>
     </div>
-    <h3 id='resume-header'>resume</h3>
-    <div id='section-resume'>
-        
+    <h3 id='contact-header'>contact me</h3>
+    <div id='section-contact'>
+        <a href="https://github.com/dos320">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/">LinkedIn</a><br>
+        <a href="mailto:howard.zhang111@gmail.com">Email (howard.zhang111@gmail.com)</a><br>
     </div>
+
+    
 </div>
 
-<a href='blog.html'>Blog</a><br><br>
-
-    
-    
-    <a href="2020/05/05/firstpost.html"> 05 May 2020 - Firstpost</a>
-
-
+<p>v0.1 - 2020-05-11</p>
 <script>
     let handleSidebarButtonClick = ()=>{
         document.getElementById('sidebar-button').style.opacity = '0';

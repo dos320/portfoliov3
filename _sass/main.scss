@@ -67,6 +67,7 @@ button{
     transition-duration: 0.25s;
 }
 
+
 #menu-button-img{
     width: 30px;
     height: 30px;
@@ -102,17 +103,16 @@ button{
     text-align: center;
 }
 
-#section-about-me, #section-projects, #section-resume{
+#section-about-me, #section-resume{
     height: 50vh;
 }
 
-#about-me-header{
-    text-align: left; 
+#section-contact, #section-projects{
+    height: 25vh;
 }
 
-#skills-header{
-    text-align: left;
-    
+#about-me-header, #skills-header, #contact-header{
+    text-align: left; 
 }
 
 #about-me-paragraph, #section-skills, #more-projects-header{
@@ -120,5 +120,22 @@ button{
     word-wrap: break-word;
     width: 50%;
     margin-left: 50vh;
+}
+
+#block-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#project-1, #project-2, #project-3, #project-4{
+    border: 1px solid grey;
+    
+}
+
+#section-skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
