@@ -17,94 +17,101 @@
 </nav>
         <button id='sidebar-button' onclick='handleSidebarButtonClick()'><img src="assets/images/menu_button.png" id='menu-button-img'></button>    
 <div id='sidebar'>
-    <button id='sidebar-button-close' onclick='sidebarButtonCloseClick()'><img src="assets/images/x.png" id='menu-button-close-img'></button>
-    <a href='#section-home'>Home</a><br>
-    <a href='#section-about-me'>About</a><br>
-    <a href='#section-skills'>Skills</a><br>
-    <a href='#section-projects'>Projects</a><br>
-    <a href='#section-contact'>Contact Me</a><br><br><br>
+    <button id='sidebar-button-close' onclick='sidebarButtonCloseClick()'><img src="assets/images/x_white.png" id='menu-button-close-img'></button>
+    <h1 style='text-align: center; color: white;'>howard zhang</h1>
+    <div id='sidebar-links'>
+        <a href='#section-home'><img src="assets/images/home.png" class="sidebar-link-images"><span class="sidebar-link-spans">Home</span></a><br><br>
+        <a href='#section-about-me'><img src="assets/images/user.png" class="sidebar-link-images"><span class="sidebar-link-spans">About</span></a><br><br>
+        <a href='#section-skills'><img src="assets/images/idea.png" class="sidebar-link-images"><span class="sidebar-link-spans">Skills</span></a><br><br>
+        <a href='#section-projects'><img src="assets/images/edit.png" class="sidebar-link-images"><span class="sidebar-link-spans">Projects</span></a><br><br>
+        <a href='#section-contact'><img src="assets/images/phone.png" class="sidebar-link-images"><span class="sidebar-link-spans">Contact Me</span></a><br><br><br>
 
-    <a href='projects.html'>Projects</a><br>
-    <a href='blog.html'>Blog</a><br>
+        <a href='projects.html'>Projects</a><br><br>
+        <a href='blog.html'>Blog</a><br><br>
+    </div>
 
 </div>
 
-
-<div class='top-header' id='section-home'>
-    <div id='top-header-inner'>
-        <h1>howard zhang</h1>
-        <p>3rd year cs student @ CarletonU</p>
-        <a href="https://github.com/dos320"><img src="assets/images/github.png" class='social-images'></a>
-        <a href="mailto:howard.zhang111@gmail.com"><img src="assets/images/email.png" class='social-images'></a>
-        <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/"><img src="assets/images/linkedin.png" class='social-images'></a><br> 
-        <a href="#section-about-me"><img src="assets/images/downward_arrow.png" id="moving-arrow"></a>
+<div class="background" id="background-div"><img src='./assets/images/splash.jpg' width="100%" height="100%"></div>
+<div class="foreground">
+    <div class='top-header' id='section-home'>
+        <div id='top-header-inner'>
+            <h1>howard zhang</h1>
+            <p>3rd year cs student @ CarletonU</p>
+            <a href="https://github.com/dos320"><img src="assets/images/github.png" class='social-images'></a>
+            <a href="mailto:howard.zhang111@gmail.com"><img src="assets/images/email.png" class='social-images'></a>
+            <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/"><img src="assets/images/linkedin.png" class='social-images'></a><br> 
+            <a href="#section-about-me"><img src="assets/images/downward_arrow.png" id="moving-arrow"></a>
+        </div>
+        
     </div>
     
+    <div id='content-div'>
+        <div id='section-about-me'>
+            <h3 id='about-me-header'>about me</h3>
+            <p id='about-me-paragraph'>
+                I am currently a third year Computer Science student at Carleton University (Graduating in April 2021). <br>
+                I have experience working on full-stack applications and web apps, designing mobile games, and managing/designing databases. <br>
+                In my spare time, I enjoy making music, making digital art, and designing/building new things. <br>
+            </p>
+            &nbsp;&nbsp;&nbsp;
+            <h3 id='skills-header'>skills</h3>
+            <div id='section-skills'>
+                <div id='skills-1'>
+                    <strong>Detail Oriented</strong><br>
+                    I am good at paying attention to details, and using this information to better the projects I work on or the teams I work with. 
+                    <br>
+                </div>
+                
+                <div id='skills-2'>
+                    <strong>Problem Solving</strong><br>
+                    I can come up with effective solutions and a clear process for solving problems.
+                </div>
+                <div id='skills-3'>
+                    <strong>Communicating/Collaborating</strong><br>
+                    I can explain things concisely and dynamically - based on the skills of the person I am talking to.
+                </div>
+                <div id='skills-4'>
+                    <strong>Organizing</strong><br>
+                    I develop methods to keep track of and triage tasks at hand, while maintaining flexibility for unexpected events.
+                </div>   
+            </div>
+        </div>
+        
+        <div id='section-projects'>
+            <h3 id='projects-header'>recent projects</h3>
+            <a href='projects.html'>more projects</a><br>
+            <div id='block-container'>
+                <div id='project-1'>
+                    <a href='https://github.com/dos320/chatapp'>chatapp</a>
+                    <p>a simple chatapp made using node.js/socket.io</p>
+                </div>
+                <div id='project-2'>
+                    <a href='https://github.com/dos320/comp3005project'>comp3005project</a>
+                    <p>a mock bookstore management system with a postgresql backend and a html/js frontend</p>
+                </div>
+                <div id='project-3'>
+                    <a href='https://github.com/EmadRyanA/EAS-3004B'>SoundWaveSurfer</a>
+                    <p>a mobile rhythm game (<a href="https://play.google.com/store/apps/details?id=com.EAS.SoundWaveSurfer">on google play!</a>) made with unity/c#</p>
+                </div>
+                <div id='project-4'>
+                    <a href='https://github.com/dos320/jspaint'>jspaint</a>
+                    <p>a "draw and guess" multiplayer game made with node.js/socket.io</p>
+                </div>
+                
+            </div>
+        </div>
+        <h3 id='contact-header'>contact me</h3>
+        <div id='section-contact'>
+            <a href="https://github.com/dos320">GitHub</a><br>
+            <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/">LinkedIn</a><br>
+            <a href="mailto:howard.zhang111@gmail.com">Email (howard.zhang111@gmail.com)</a><br>
+        </div>
+    
+        <p>v0.1 - 2020-05-11</p>
+    </div>
 </div>
 
-<div id='content-div'>
-    <div id='section-about-me'>
-        <h3 id='about-me-header'>about me</h3>
-        <p id='about-me-paragraph'>
-            I am currently a third year Computer Science student at Carleton University (Graduating in April 2021). <br>
-            I have experience working on full-stack applications and web apps, designing mobile games, and managing/designing databases. <br>
-            In my spare time, I enjoy making music, making digital art, and designing/building new things. <br>
-        </p>
-        <h3 id='skills-header'>skills</h3>
-        <div id='section-skills'>
-            <div id='skills-1'>
-                <strong>Detail Oriented</strong><br>
-                I am good at paying attention to details, and using this information to better the projects I work on or the teams I work with. 
-                <br>
-            </div>
-            
-            <div id='skills-2'>
-                <strong>Problem Solving</strong><br>
-                I can come up with effective solutions and a clear process for solving problems.
-            </div>
-            <div id='skills-3'>
-                <strong>Communicating/Collaborating</strong><br>
-                I can explain things concisely and dynamically - based on the skills of the person I am talking to.
-            </div>
-            <div id='skills-4'>
-                <strong>Organizing</strong><br>
-                I develop methods to keep track of and triage tasks at hand, while maintaining flexibility for unexpected events.
-            </div>   
-        </div>
-    </div>
-
-    <h3 id='projects-header'>recent projects</h3>
-    <div id='section-projects'>
-        <a href='projects.html'>more projects</a><br>
-        <div id='block-container'>
-            <div id='project-1'>
-                <a href='https://github.com/dos320/chatapp'>chatapp</a>
-                <p>a simple chatapp made using node.js/socket.io</p>
-            </div>
-            <div id='project-2'>
-                <a href='https://github.com/dos320/comp3005project'>comp3005project</a>
-                <p>a mock bookstore management system with a postgresql backend and a html/js frontend</p>
-            </div>
-            <div id='project-3'>
-                <a href='https://github.com/EmadRyanA/EAS-3004B'>SoundWaveSurfer</a>
-                <p>a mobile rhythm game (<a href="https://play.google.com/store/apps/details?id=com.EAS.SoundWaveSurfer">on google play!</a>) made with unity/c#</p>
-            </div>
-            <div id='project-4'>
-                <a href='https://github.com/dos320/jspaint'>jspaint</a>
-                <p>a "draw and guess" multiplayer game made with node.js/socket.io</p>
-            </div>
-            
-        </div>
-    </div>
-    <h3 id='contact-header'>contact me</h3>
-    <div id='section-contact'>
-        <a href="https://github.com/dos320">GitHub</a><br>
-        <a href="https://www.linkedin.com/in/howard-zhang-0b9226186/">LinkedIn</a><br>
-        <a href="mailto:howard.zhang111@gmail.com">Email (howard.zhang111@gmail.com)</a><br>
-    </div>
-
-    <p>v0.1 - 2020-05-11</p>
-</div>
 
 <script>
     let handleSidebarButtonClick = ()=>{
@@ -119,12 +126,19 @@
     let init = () => {
         
         window.addEventListener('scroll', (e)=>{
+            console.log(window.scrollY + " " + window.innerHeight)
+            let blurAmount = 8*(window.scrollY/(window.innerHeight*0.3));
+            let sidebarColorOpacity = 0.2 + 0.6*(window.scrollY/(window.innerHeight)*0.6);  
+            document.getElementById('background-div').style.filter = 'blur(' + blurAmount + 'px)'
             if(window.scrollY != 0){
                 //document.getElementById("sidebar-button").style.display = 'block';
                 document.getElementById('sidebar-button').style.opacity = '100';
+                document.getElementById('sidebar').style.backgroundColor = 'rgba(0,0,0,'+sidebarColorOpacity+')';
             }else{
                 document.getElementById('sidebar-button').style.opacity = '0';
+                document.getElementById('sidebar').style.backgroundColor = 'rgba(0,0,0,0.2)';
             }
+
         })
     }
 </script>
