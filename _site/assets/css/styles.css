@@ -1,6 +1,18 @@
 html, body { margin: 0; padding: 0; }
 
-body { background-image: url("../images/splash.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; font-family: Verdana, Geneva, sans-serif; }
+html { height: 100%; scroll-behavior: smooth; display: flex; flex-direction: column; }
+
+body { font-family: Verdana, Geneva, sans-serif; display: flex; flex-direction: column; }
+
+body > * { flex-shrink: 0; }
+
+a { color: darkgrey; transition-property: color; transition-duration: 0.25s; text-decoration: none; }
+
+a:visited { color: darkgrey; }
+
+a:hover { color: #b387fa; }
+
+a:active { color: #644a8c; }
 
 nav a { color: white; transition-property: color; transition-duration: 0.25s; }
 
@@ -10,11 +22,15 @@ nav a:hover { color: #b387fa; }
 
 nav a:active { color: #644a8c; }
 
-nav { text-align: right; padding-top: 10px; }
-
-html { scroll-behavior: smooth; }
+nav { text-align: right; padding-top: 10px; z-index: 1; }
 
 button { background-color: transparent; background-repeat: no-repeat; outline: none; border: none; cursor: pointer; overflow: hidden; }
+
+.background { background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; filter: blur(0px); position: absolute; width: 100%; height: 100%; top: -10px; z-index: -99; }
+
+.foreground { z-index: 1; }
+
+.project-foreground { z-index: 1; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px); height: 100%; min-height: 100%; padding-left: 10px; flex-grow: 1; }
 
 #top-header-inner { position: absolute; left: 0px; right: 0px; }
 
@@ -29,25 +45,33 @@ button { background-color: transparent; background-repeat: no-repeat; outline: n
 
 @keyframes menu-button-rotateside { from { transform: rotate(0deg); }
   to { transform: rotate(-90deg); } }
-#sidebar-button { position: fixed; z-index: 9; top: 0; opacity: 0; transition-property: opacity; transition-duration: 0.25s; }
+#sidebar-button { position: fixed; z-index: 999; top: 0; background-color: rgba(255, 255, 255, 0.5); border-radius: 3px; opacity: 0; transition-property: all; transition-duration: 0.25s; }
+
+#sidebar-button:hover { background-color: white; }
 
 #menu-button-img { width: 30px; height: 30px; }
 
 #menu-button-close-img { width: 30px; height: 30px; }
 
-#sidebar { border: 1px solid black; width: 25%; height: 100vh; position: fixed; z-index: 10; top: 0; background-color: whitesmoke; overflow: hidden; left: -2000px; transition-property: left; transition-duration: 0.25s; transition-timing-function: ease-out; }
+#sidebar { border: 1px solid black; width: 25%; height: 100vh; position: fixed; z-index: 9999; top: 0; background-color: rgba(0, 0, 0, 0.2); overflow: hidden; left: -2000px; transition-property: left; transition-duration: 0.25s; transition-timing-function: ease-out; text-decoration: none; backdrop-filter: blur(7px); }
+
+.sidebar-link-images { padding-left: 5px; top: 10px; width: 25px; height: 25px; }
+
+.sidebar-link-spans { padding-left: 10px; vertical-align: middle; }
+
+#sidebar-links a { color: white; }
 
 #sidebar-button-close { float: right; }
 
 .text-blocks { width: 50%; margin: 0 auto; text-align: center; }
 
-#section-about-me, #section-resume { height: 50vh; }
+#section-about-me, #section-resume { /*height: 50vh;*/ padding-bottom: 10px; }
 
-#section-contact, #section-projects { height: 25vh; }
+#section-contact, #section-projects { /*height: 25vh;*/ }
 
 #about-me-header, #skills-header, #contact-header { text-align: left; }
 
-#about-me-paragraph, #section-skills, #more-projects-header { text-align: left; word-wrap: break-word; width: 50%; margin-left: 50vh; }
+#about-me-paragraph, #section-skills, #more-projects-header { text-align: left; word-wrap: break-word; width: 50%; margin-left: 50; }
 
 #block-container { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; }
 
@@ -55,4 +79,4 @@ button { background-color: transparent; background-repeat: no-repeat; outline: n
 
 #section-skills { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 20px; }
 
-#content-div { background-color: rgba(255, 255, 255, 0.7); }
+#content-div { background-color: white; height: 100vh; padding-left: 10px; }
